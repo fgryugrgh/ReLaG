@@ -1,0 +1,28 @@
+{
+  "name": "website-statis",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgryugrgh/Website-Statis-Bu-Inung.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fgryugrgh/Website-Statis-Bu-Inung/issues"
+  },
+  "homepage": "https://github.com/fgryugrgh/Website-Statis-Bu-Inung#readme",
+  "dependencies": {
+    "eleventy": "^2.0.1",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

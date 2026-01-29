@@ -1,0 +1,301 @@
+---
+layout: layout.njk
+pagination:
+  data: produk
+  size: 1
+  alias: produk
+permalink: "/codes/halaman/{{ produk.slug }}/index.html"
+---
+<div id="carouselProduct" class="carousel slide mt-5 mb-4">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselProduct" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center">
+      <img src="/public/images/{{produk.laptop1}}" class="d-block" height="375px" alt="asus tuf">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+      <img src="/public/images/{{produk.laptop2}}" class="d-block" height="375px" alt="asus tuf">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+      <img src="/public/images/{{produk.laptop3}}" class="d-block" height="375px" alt="asus tuf">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<p class="headline text-center mt-2 h2">
+  {{ produk.namaProduk }} <br>
+  {{ produk.hargaProduk }}
+</p>
+
+<div class="purple-background container mt-5">
+  <div class="row">
+    <div class="col py-3 text-white headline h4 mb-0 border border-2 border-secondary d-flex align-items-center">
+        Spesifikasi
+    </div>
+    <div class="col py-3 text-white headline h4 mb-0 border border-start-0 border-2 border-secondary">
+        Spesifikasi Tambahan
+    </div>
+  </div>
+  <div class="row border border-top-0 border-2 border-secondary">
+    <div class="col text pb-3 poppins h5 mb-0 text-white">
+      Processor : {{ produk.cpu }}
+      Graphics : {{ produk.gpu }}
+      Memory : {{ produk.ram }}
+      Storage : {{ produk.storage }}
+      Display : {{ produk.display }}
+      Battery : {{ produk.battery }}
+      Dimensions : {{ produk.dimension }}
+      Weight : {{ produk.weight }}
+      Operating System : {{ produk.os }}
+    </div>
+
+    <div class="col text pb-3 poppins h5 mb-0 text-white border-start border-2 border-secondary">
+      Keyboard : {{ produk.keyboard }}
+      Speakers : {{ produk.speaker }}
+      Camera : {{ produk.camera }}
+
+      Ports :
+      {{ produk.rj45 }}
+      {{ produk.dpusb }}
+      {{ produk.usb3 }}
+      {{ produk.hdmi }}
+      {{ produk.audiojack }}
+
+      Wireless : {{ produk.wifi }}
+      Color : {{ produk.color }}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mt-5">
+    <div class="col">
+      <p class="headline h2 text-center">
+        Video Review
+      </p>
+    </div>
+  </div>
+  <div class="row mt-2 text-center row-gap-3">
+    <div class="col">
+      <iframe width="415px" loading="lazy" height="235px"
+        src="https://www.youtube.com/embed/{{produk.ytEmbed1}}">
+      </iframe>
+    </div>
+    <div class="col">
+      <iframe width="415px" loading="lazy" height="235px"
+        src="https://www.youtube.com/embed/{{produk.ytEmbed2}}">
+      </iframe>
+    </div>
+    <div class="col">
+      <iframe width="415px" loading="lazy" height="235px"
+        src="https://www.youtube.com/embed/{{produk.ytEmbed3}}">
+      </iframe>
+    </div>
+  </div>
+</div>
+<div class="container mb-1">
+  <div class="row text-center mt-5">
+    <p class="headline h3 mb-0">
+      Beli Produknya di
+    </p>
+  </div>
+  <div id="toko" class="row text-center w-75 mt-3 py-3 mx-auto rounded purple-background">
+    <div class="col">
+      <img src="/public/images/tokopedialogo.png" height="50px">
+      <a href="{{produk.linkTokopedia}}" class="poppins ms-1">Tokopedia</a>
+    </div>
+    <div class="col">
+      <img src="/public/images/shopeelogo.png" height="50px" class="rounded">
+      <a href="{{produk.linkShopee}}" class="poppins ms-1">Shopee</a>
+    </div>
+    <div class="col">
+      <img src="/public/images/lazadalogo.png" height="50px">
+      <a href="{{produk.linkLazada}}" class="poppins ms-1">Lazada</a>
+    </div>
+  </div>
+</div>
+<div id="starRating" class="container py-5">
+  <div class="row">
+    <p class="text-start headline h3 mb-3">
+      Ulasan Pembeli
+    </p>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-md-8">
+      <div id="ratingBreakdown"></div>
+    </div>
+    <div class="col-md-4 text-center mb-4 mb-md-0 poppins purple-background rounded-3 pt-3">
+      <h1 id="averageRating" class="fw-bold">0.0</h1>
+      <div id="averageStars" class="mb-2"></div>
+      <p id="totalReviews" class="poppins">0 reviews</p>
+    </div>
+  </div>
+  <div class="row purple-background mt-3 justify-content-center">
+    <div class="row">
+      <div class="col-auto gx-2 pt-3 pb-2 ms-1">
+        <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+      </div>
+      <div class="col d-flex flex-column text-start pb-2 pt-3">
+        <div class="headline h5 mb-0">
+          {{produk.username1}}
+        </div>
+        <div>
+          <i class="fa-solid fa-star star"></i> 
+          <i class="fa-solid fa-star star"></i> 
+          <i class="fa-solid fa-star star"></i> 
+          <i class="fa-solid fa-star star"></i> 
+          <i class="fa-solid fa-star star"></i> 
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3 ms-1 poppins">
+      {{produk.userReview1}}
+    </div>
+  </div>
+  <div class="row purple-background mt-3 justify-content-center">
+    <div class="row">
+      <div class="col-auto gx-2 pt-3 pb-2 ms-1">
+        <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+      </div>
+      <div class="col d-flex flex-column text-start pb-2 pt-3">
+        <div class="headline h5 mb-0">
+          {{produk.username2}}
+        </div>
+        <div>
+          <i class="fa-solid fa-star star"></i> 
+          <i class="fa-solid fa-star star"></i>
+          <i class="fa-solid fa-star star"></i> 
+          <i class="fa-solid fa-star star"></i> 
+          <i class="fa-solid fa-star star"></i> 
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3 ms-1 poppins">
+      {{produk.userReview2}}
+    </div>
+  </div>
+  <div id="hiddenReview" class="hidden">
+    <div class="row purple-background mt-3 justify-content-center">
+      <div class="row">
+        <div class="col-auto gx-2 pt-3 pb-2 ms-1">
+          <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+        </div>
+        <div class="col d-flex flex-column text-start pb-2 pt-3">
+          <div class="headline h5 mb-0">
+            {{produk.username3}}
+          </div>
+          <div>
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star"></i> 
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3 ms-1 poppins">
+        {{produk.userReview3}}
+      </div>
+    </div>
+    <div class="row purple-background mt-3 justify-content-center">
+      <div class="row">
+        <div class="col-auto gx-2 pt-3 pb-2 ms-1">
+          <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+        </div>
+        <div class="col d-flex flex-column text-start pb-2 pt-3">
+          <div class="headline h5 mb-0">
+            {{produk.username4}}
+          </div>
+          <div>
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star-muted"></i> 
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3 ms-1 poppins">
+        {{produk.userReview4}}
+      </div>
+    </div>
+    <div class="row purple-background mt-3 justify-content-center">
+      <div class="row">
+        <div class="col-auto gx-2 pt-3 pb-2 ms-1">
+          <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+        </div>
+        <div class="col d-flex flex-column text-start pb-2 pt-3">
+          <div class="headline h5 mb-0">
+            {{produk.username5}}
+          </div>
+          <div>
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star"></i> 
+            <i class="fa-solid fa-star star-muted"></i> 
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3 ms-1 poppins">
+        {{produk.userReview5}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2 mx-auto">
+    <div id="readMore" class="transition-all transition-p5 d-flex flex-column">
+      <div id="readMoreTriangle" class="transition-all transition-p5 mx-auto triangle-down"></div>  
+      <div id="readMoreText" class="poppins text-white mx-auto d-inline">
+        Read More...
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<div class="row d-flex flex-column">
+  <div class="headline h3 ">
+    Ulasan Anda
+  </div>
+  <div class="star-rating mb-3">
+      <i class="fa-solid fa-star fa-2x star-muted" data-value="1"></i>
+      <i class="fa-solid fa-star fa-2x star-muted" data-value="2"></i>
+      <i class="fa-solid fa-star fa-2x star-muted" data-value="3"></i>
+      <i class="fa-solid fa-star fa-2x star-muted" data-value="4"></i>
+      <i class="fa-solid fa-star fa-2x star-muted" data-value="5"></i>
+  </div>
+  <form class="mb-3">
+    <textarea
+      type="text"
+      id="userReview"
+      name="ulasan user"
+      placeholder="Tulis Ulasan..."
+    ></textarea>
+  </form>
+  <div
+    id="reviewSubmit"
+    class="transition-all ld-over-inverse d-flex align-items-center justify-content-center ms-3 mb-4"
+  >
+    SUBMIT
+    <div class="ld ld-ring ld-spin"></div>
+  </div>
+</div>
+</div>
