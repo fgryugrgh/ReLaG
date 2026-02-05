@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ReLaG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/public/css/header.css" />
+    <link rel="stylesheet" href="/public/css/footer.css" />
+    <link rel="stylesheet" href="/public/css/main.css" />
+    <link rel="stylesheet" href="/public/css/loading-animation.css" />
+    <link rel="stylesheet" href="/public/css/loading.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page">
+      <header id="header" class="container-fluid no-select">
+  <div class="row align-items-center justify-content-center">
+    <div id="navbarIcon" class="col d-flex align-items-center">
+      <img
+        src="/public/images/hamburgernav.png"
+        alt="nav button"
+        width="30"
+        height="25"
+        id="hamburger"
+        class="transition-all"
+        onclick="responsiveSides(1)"
+      />
+    </div>
+
+    <div id="relagtext" class="col text-center no-select">
+      <img
+        src="/public/images/relaglogo.png"
+        alt="logo"
+        width="50"
+        height="44"
+        id="logo"
+      />
+      ReLaG
+    </div>
+
+    <div id="sidebarIcon" class="col d-flex align-items-center">
+      <img
+        src="/public/images/sidebar.png"
+        alt="sidebar"
+        width="30"
+        height="40"
+        id="fireyicon"
+        class="ms-auto transition-all"
+        onclick="responsiveSides(0)"
+      />
+    </div>
+  </div>
+</header>
+
+<div id="navbarOpen" class="container-fluid transition-all no-select">
+  <div class="navbarClose row align-items-center no-padding">
+    <p class="text-start mb-0 no-select" onclick="responsiveSides(1)">X</p>
+  </div>
+
+  <a href="/" class=" no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+    <div class="col">
+      <img src="/public/images/home.png" alt="home" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+      Home
+    </div>
+  </a>
+
+  <a href="/galeri/produk/" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+    <div class="col">
+      <img src="/public/images/gallery.png" alt="galeri" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+      Galeri
+    </div>
+  </a>
+
+  <a href="/about/" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+    <div class="col">
+      <img src="/public/images/about.png" alt="about" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+      About
+    </div>
+  </a>
+
+  <a href="/formkontak/" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+    <div class="col">
+      <img src="/public/images/Kontak.png" alt="kontak" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+      Kontak
+    </div>
+  </a>
+</div>
+
+<div id="sidebarOpen" class="container-fluid transition-all">
+  <div class="navbarClose row align-items-center no-padding">
+    <p class="text-end mb-0 no-select" onclick="responsiveSides(0)">X</p>
+  </div>
+
+  <div class="row g-0">
+    <a href="https://mureks.co.id/asus-umumkan-rog-zephyrus-duo-di-ces-2026-laptop-gaming-dua-layar-oled-pertama-di-dunia-dengan-keyboard-lepas-pasang" target="_blank">
+      <img src="/public/images/zephyrusduo.jpg" alt="asus rog zephyrus duo 2026" width="475" />
+    </a>
+    <p class="headline text-center">
+      ASUS Mengumumkan Zephyrus Duo (2026) di CES 2026
+    </p>
+  </div>
+
+  <div class="row g-0">
+    <a href="https://teropongmedia.id/lenovo-pamer-legion-pro-rollable-di-ces-2026-laptop-gaming-layar-24-inci-yang-bisa-memanjang/" target="_blank">
+      <img src="/public/images/rollable.jpeg" alt="lenovo legion rollable" width="475" />
+    </a>
+    <p class="headline text-center">
+      Laptop Layar 24 Inci yang Bisa Memanjang dari Lenovo
+    </p>
+  </div>
+
+  <div class="row g-0">
+    <a href="https://www.idntimes.com/tech/gadget/ces-2026-intel-core-ultra-series-3-resmi-debut-dengan-intel-18a-00-6kn2w-kphp13" target="_blank">
+      <img src="/public/images/intelcore.jpg" alt="Intel ultra core series 3" width="475" />
+    </a>
+    <p class="headline text-center">
+      Intel Core Ultra Series 3 Launch
+    </p>
+  </div>
+
+  <div class="row g-0">
+    <a href="https://www.ces.tech/" target="_blank">
+      <img src="/public/images/ces.jpg" alt="CES 2026 poster" width="475" />
+    </a>
+    <p class="headline text-center">
+      CES 2026 di Las Vegas, Amerika Serikat
+    </p>
+  </div>
+</div>
+</header>
+      <main id="content">>
+        
+<div class="d-flex justify-content-center mt-0">
+  <img src="/public/images/bannerasus1.png" class="banner" />
+</div>
+<div class="d-flex justify-content-center">
+  <img src="/public/images/bannerlenovo2.png" class="banner" />
+</div>
+
+<div class="d-flex align-items-center mt-5">
+  <div class="dropdown" data-bs-theme="dark">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Pilih Merk
+    </button>
+    <ul class="dropdown-menu transition-all">
+      <li><a class="dropdown-item" href="/galeri/Produk/">Default</a></li>
+      <li><a class="dropdown-item" href="/galeri/ASUS/">ASUS</a></li>
+      <li><a class="dropdown-item" href="/galeri/MSI/">MSI</a></li>
+      <li><a class="dropdown-item" href="/galeri/Lenovo/">Lenovo</a></li>
+      <li><a class="dropdown-item" href="/galeri/Acer/">Acer</a></li>
+    </ul>
+  </div>
+  <div class="headline productlabel" style="font-size: 30px;">
+    Produk
+  </div>
+</div>
+
+<div class="container mt-4 mb-5">
+  <div class="row justify-content-center gap-4">
+    <div class="col pt-3 mr-3 mw-440p rounded boxshadow" style="background-color: rgb(12, 3, 37)">
+      <a href="/ASUS TUF Gaming A15/">
+        <img src="/public/images/asustufa15.png" height="200px"
+             class="dropshadow transition-all scaleup mx-auto d-block" />
+      </a>
+      <div>
+        <p class="headline h3 text-center mt-4">
+          ASUS TUF Gaming A15<br>
+          Rp9.799.000
+        </p>
+        <p class="text-center text-white mt-5 mb-5 poppins">
+          AMD Ryzen 7 7445HS <br>
+          NVIDIA GeForce RTX 3050 <br>
+          15.6-inch FHD 144Hz <br>
+          8GB DDR5 <br>
+          512GB NVMe SSD <br>
+          2.3kg 35.9 x 25.6 x 2.3 cm <br>
+          Windows 11 Home
+        </p>
+      </div>
+    </div>
+
+    <div class="col pt-3 mr-3 mw-440p rounded boxshadow" style="background-color: rgb(12, 3, 37)">
+      <a href="/Lenovo Legion 5/">
+        <img src="/public/images/lenovolegion5.png" height="200px"
+             class="dropshadow transition-all scaleup mx-auto d-block" />
+      </a>
+      <div>
+        <p class="headline h3 text-center mt-4">
+          Lenovo Legion 5<br>
+          Rp19.399.000
+        </p>
+        <p class="text-center text-white mt-5 mb-5 poppins">
+          Intel Core i7-13650HX <br>
+          NVIDIA GeForce RTX 5050 <br>
+          15.3″ WUXGA 165Hz <br>
+          16GB DDR5 <br>
+          512GB NVMe SSD <br>
+          2.1kg 34.5 x 25.5 x 2.2cm <br>
+          Windows 11 Home
+        </p>
+      </div>
+    </div>
+
+    <div class="col pt-3 mr-3 mw-440p rounded boxshadow" style="background-color: rgb(12, 3, 37)">
+      <a href="/MSI Cyborg 15/">
+        <img src="/public/images/msicyborg15.png" height="200px"
+             class="dropshadow transition-all scaleup mx-auto d-block" />
+      </a>
+      <div>
+        <p class="headline h3 text-center mt-4">
+          MSI Cyborg 15<br>
+          17.489.000
+        </p>
+        <p class="text-center text-white mt-5 mb-5 poppins">
+          Intel Core 7 240H <br>
+          NVIDIA GeForce RTX 5060 <br>
+          15.6-inch FHD 144Hz <br>
+          16GB DDR5 <br>
+          512GB NVMe SSD <br>
+          2.1kg 35.9 x 25.5 x 2.3 cm <br>
+          Windows 11 Home
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+      </main>
+      <footer id="footer">
+  <div class="row align-items-center" id="toprow">
+    <div class="col no-select">
+      <img src="/public/images/relag.png" width="300" />
+    </div>
+
+    <div class="col">
+      <div
+        class="row d-flex justify-content-center"
+        style="
+          font-family: 'Oswald', sans-serif;
+          font-weight: 600;
+          color: rgb(174, 177, 176);
+        "
+      >
+        DAPATKAN PENAWARAN TERBARU DAN LEBIH BANYAK LAGI
+      </div>
+
+      <div class="row">
+        <div class="d-flex flex-row justify-content-center">
+          <form>
+            <input
+              type="text"
+              id="emailform"
+              name="emailform"
+              placeholder="Masukan alamat email"
+            />
+          </form>
+
+          <div
+            id="emailsubmit"
+            class="transition-all ld-over-inverse d-flex align-items-center justify-content-center"
+          >
+            DAFTAR
+            <div class="ld ld-ring ld-spin"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex align-items-center justify-content-end no-select">
+      <div class="d-flex flex-row" id="social">
+        <a href="https://facebook.com" target="_blank">
+          <img src="/public/images/facebook.png" alt="facebook_icon" />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="/public/images/instagram.png" alt="instagram_icon" />
+        </a>
+        <a href="https://tiktok.com" target="_blank">
+          <img src="/public/images/tiktok.png" alt="tiktok_icon" />
+        </a>
+        <a href="https://x.com" target="_blank">
+          <img src="/public/images/twitter.png" alt="twitter_icon" />
+        </a>
+        <a href="https://mail.google.com" target="_blank">
+          <img src="/public/images/email.png" alt="email_icon" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto" id="policies">
+    <div class="col">
+      <a href="figma.com" target="_blank" class="white-link">Privacy Policy</a>
+    </div>
+    <div class="col">
+      <a href="figma.com" target="_blank" class="white-link">
+        Terms Of Service
+      </a>
+    </div>
+    <div class="col">
+      <a href="figma.com" target="_blank" class="white-link">Cookie</a>
+    </div>
+    <div class="col">
+      <a href="figma.com" target="_blank" class="white-link">
+        Accessibility Statement
+      </a>
+    </div>
+  </div>
+
+  <div class="row mx-auto" id="copyright">
+    <p>
+      © 2026 ReLaG Corp. All rights reserved. No part of this website or
+      application may be reproduced, distributed or transmitted in any form or
+      by any means without the prior written permission of ReLaG Corp.
+    </p>
+  </div>
+</footer>
+    </div>
+    <script src="/public/js/review.js"></script>
+    <script src="/public/js/footer.js"></script>
+    <script src="/public/js/header.js"></script>
+  </body>
+</html

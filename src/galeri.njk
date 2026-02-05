@@ -4,14 +4,14 @@ pagination:
   data: galeri
   size: 1
   alias: galeri
-permalink: "/codes/halaman/galeri/{{galeri.merk}}/index.html"
+permalink: "/galeri/{{ galeri.merk }}/index.html"
 ---
 
 <div class="d-flex justify-content-center mt-0">
-  <img src="/public/images/{{galeri.bannerMerk1}}" class="banner" />
+  <img src="{{ ('/public/images/' + galeri.bannerMerk1) | url }}" class="banner" />
 </div>
 <div class="d-flex justify-content-center">
-  <img src="/public/images/{{galeri.bannerMerk2}}" class="banner" />
+  <img src="{{ ('/public/images/' + galeri.bannerMerk2) | url }}" class="banner" />
 </div>
 
 <div class="d-flex align-items-center mt-5">
@@ -20,11 +20,11 @@ permalink: "/codes/halaman/galeri/{{galeri.merk}}/index.html"
       Pilih Merk
     </button>
     <ul class="dropdown-menu transition-all">
-      <li><a class="dropdown-item" href="../Produk/">Default</a></li>
-      <li><a class="dropdown-item" href="../ASUS/">ASUS</a></li>
-      <li><a class="dropdown-item" href="../MSI/">MSI</a></li>
-      <li><a class="dropdown-item" href="../Lenovo/">Lenovo</a></li>
-      <li><a class="dropdown-item" href="../Acer/">Acer</a></li>
+      <li><a class="dropdown-item" href="{{ '/galeri/Produk/' | url }}">Default</a></li>
+      <li><a class="dropdown-item" href="{{ '/galeri/ASUS/' | url }}">ASUS</a></li>
+      <li><a class="dropdown-item" href="{{ '/galeri/MSI/' | url }}">MSI</a></li>
+      <li><a class="dropdown-item" href="{{ '/galeri/Lenovo/' | url }}">Lenovo</a></li>
+      <li><a class="dropdown-item" href="{{ '/galeri/Acer/' | url }}">Acer</a></li>
     </ul>
   </div>
   <div class="headline productlabel" style="font-size: 30px;">
@@ -35,8 +35,9 @@ permalink: "/codes/halaman/galeri/{{galeri.merk}}/index.html"
 <div class="container mt-4 mb-5">
   <div class="row justify-content-center gap-4">
     <div class="col pt-3 mr-3 mw-440p rounded boxshadow" style="background-color: rgb(12, 3, 37)">
-      <a href="/_site/codes/halaman/{{galeri.produk1Link}}">
-        <img src="/public/images/{{galeri.produk1}}" alt="asustuf" height="200px" class="dropshadow transition-all scaleup mx-auto d-block" />
+      <a href="{{ ('/' + galeri.produk1Link) | url }}">
+        <img src="{{ ('/public/images/' + galeri.produk1) | url }}" height="200px"
+             class="dropshadow transition-all scaleup mx-auto d-block" />
       </a>
       <div>
         <p class="headline h3 text-center mt-4">
@@ -56,8 +57,9 @@ permalink: "/codes/halaman/galeri/{{galeri.merk}}/index.html"
     </div>
 
     <div class="col pt-3 mr-3 mw-440p rounded boxshadow" style="background-color: rgb(12, 3, 37)">
-      <a href="/_site/codes/halaman/{{galeri.produk2Link}}">
-        <img src="/public/images/{{galeri.produk2}}" alt="asustuf" height="200px" class="dropshadow transition-all scaleup mx-auto d-block" />
+      <a href="{{ ('/' + galeri.produk2Link) | url }}">
+        <img src="{{ ('/public/images/' + galeri.produk2) | url }}" height="200px"
+             class="dropshadow transition-all scaleup mx-auto d-block" />
       </a>
       <div>
         <p class="headline h3 text-center mt-4">
@@ -77,8 +79,9 @@ permalink: "/codes/halaman/galeri/{{galeri.merk}}/index.html"
     </div>
 
     <div class="col pt-3 mr-3 mw-440p rounded boxshadow" style="background-color: rgb(12, 3, 37)">
-      <a href="/_site/codes/halaman/{{galeri.produk3Link}}">
-        <img src="/public/images/{{galeri.produk3}}" alt="asustuf" height="200px" class="dropshadow transition-all scaleup mx-auto d-block" />
+      <a href="{{ ('/' + galeri.produk3Link) | url }}">
+        <img src="{{ ('/public/images/' + galeri.produk3) | url }}" height="200px"
+             class="dropshadow transition-all scaleup mx-auto d-block" />
       </a>
       <div>
         <p class="headline h3 text-center mt-4">

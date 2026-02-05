@@ -4,7 +4,7 @@ pagination:
   data: produk
   size: 1
   alias: produk
-permalink: "/codes/halaman/{{ produk.slug }}/index.html"
+permalink: "/{{ produk.slug }}/index.html"
 ---
 <div id="carouselProduct" class="carousel slide mt-5 mb-4">
   <div class="carousel-indicators">
@@ -15,17 +15,17 @@ permalink: "/codes/halaman/{{ produk.slug }}/index.html"
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="d-flex justify-content-center">
-      <img src="/public/images/{{produk.laptop1}}" class="d-block" height="375px" alt="asus tuf">
+      <img src="{{('/public/images/' + produk.laptop1) | url }}" class="d-block" height="375px" alt="asus tuf">
       </div>
     </div>
     <div class="carousel-item">
       <div class="d-flex justify-content-center">
-      <img src="/public/images/{{produk.laptop2}}" class="d-block" height="375px" alt="asus tuf">
+      <img src="{{ ('/public/images/' + produk.laptop2) | url }}" class="d-block" height="375px" alt="asus tuf">
       </div>
     </div>
     <div class="carousel-item">
       <div class="d-flex justify-content-center">
-      <img src="/public/images/{{produk.laptop3}}" class="d-block" height="375px" alt="asus tuf">
+      <img src="{{ ('/public/images/' + produk.laptop3) | url }}" class="d-block" height="375px" alt="asus tuf">
       </div>
     </div>
   </div>
@@ -79,7 +79,6 @@ permalink: "/codes/halaman/{{ produk.slug }}/index.html"
       {{ produk.audiojack }}
 
       Wireless : {{ produk.wifi }}
-      Color : {{ produk.color }}
     </div>
   </div>
 </div>
@@ -118,16 +117,16 @@ permalink: "/codes/halaman/{{ produk.slug }}/index.html"
   </div>
   <div id="toko" class="row text-center w-75 mt-3 py-3 mx-auto rounded purple-background">
     <div class="col">
-      <img src="/public/images/tokopedialogo.png" height="50px">
-      <a href="{{produk.linkTokopedia}}" class="poppins ms-1">Tokopedia</a>
+      <img src="{{ '/public/images/tokopedialogo.png' | url }}" height="50px">
+      <a href="{{produk.linkTokopedia}}" class="poppins ms-1" target="_blank">Tokopedia</a>
     </div>
     <div class="col">
-      <img src="/public/images/shopeelogo.png" height="50px" class="rounded">
-      <a href="{{produk.linkShopee}}" class="poppins ms-1">Shopee</a>
+      <img src="{{ '/public/images/shopeelogo.png' | url }}" height="50px">
+      <a href="{{produk.linkShopee}}" class="poppins ms-1" target="_blank">Shopee</a>
     </div>
     <div class="col">
-      <img src="/public/images/lazadalogo.png" height="50px">
-      <a href="{{produk.linkLazada}}" class="poppins ms-1">Lazada</a>
+      <img src="{{ '/public/images/lazadalogo.png' | url }}" height="50px">
+      <a href="{{produk.linkLazada}}" class="poppins ms-1" target="_blank">Lazada</a>
     </div>
   </div>
 </div>
@@ -150,7 +149,7 @@ permalink: "/codes/halaman/{{ produk.slug }}/index.html"
   <div class="row purple-background mt-3 justify-content-center">
     <div class="row">
       <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-        <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+        <img src="{{ '/public/images/profile.png' | url }}" class="d-block rounded-circle" width="50px">
       </div>
       <div class="col d-flex flex-column text-start pb-2 pt-3">
         <div class="headline h5 mb-0">
@@ -172,7 +171,7 @@ permalink: "/codes/halaman/{{ produk.slug }}/index.html"
   <div class="row purple-background mt-3 justify-content-center">
     <div class="row">
       <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-        <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+        <img src="{{ '/public/images/profile.png' | url }}"  class="d-block rounded-circle" width="50px">
       </div>
       <div class="col d-flex flex-column text-start pb-2 pt-3">
         <div class="headline h5 mb-0">
@@ -195,7 +194,7 @@ permalink: "/codes/halaman/{{ produk.slug }}/index.html"
     <div class="row purple-background mt-3 justify-content-center">
       <div class="row">
         <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-          <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+          <img src="{{ '/public/images/profile.png' | url }}" class="d-block rounded-circle" width="50px">
         </div>
         <div class="col d-flex flex-column text-start pb-2 pt-3">
           <div class="headline h5 mb-0">
@@ -217,7 +216,7 @@ permalink: "/codes/halaman/{{ produk.slug }}/index.html"
     <div class="row purple-background mt-3 justify-content-center">
       <div class="row">
         <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-          <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+          <img src="{{ '/public/images/profile.png' | url }}" class="d-block rounded-circle" width="50px">
         </div>
         <div class="col d-flex flex-column text-start pb-2 pt-3">
           <div class="headline h5 mb-0">
@@ -239,7 +238,7 @@ permalink: "/codes/halaman/{{ produk.slug }}/index.html"
     <div class="row purple-background mt-3 justify-content-center">
       <div class="row">
         <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-          <img src="/public/images/profile.png" class="d-block rounded-circle" width="50px">
+          <img src="{{ '/public/images/profile.png' | url }}" class="d-block rounded-circle" width="50px">
         </div>
         <div class="col d-flex flex-column text-start pb-2 pt-3">
           <div class="headline h5 mb-0">

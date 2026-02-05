@@ -216,3 +216,32 @@ html, body {
 .rotated {
   transform: scaleX(175%) scaleY(30%) rotate(180deg) !important;
 }
+
+.no-decoration{
+  text-decoration: none;
+}
+
+.banner {
+  height: 457px;
+  background-image: url("img/banner.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.textHeadline {
+  color: white;
+  font-size: 50px;
+  font-family: archivo black;
+}
+ 
+.textheadline2 {
+  color: white;
+  font-size: 20px;
+  font-family: roboto;
+}
+
+.textheadline3 {
+  color: white;
+  font-size: 20px;
+  font-family: roboto;
+}

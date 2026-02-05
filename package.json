@@ -4,7 +4,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "deploy": "npm run build && gh-pages -d _site"
   },
   "repository": {
     "type": "git",
@@ -25,11 +26,5 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "gh-pages": "^6.3.0"
-  },
-  "scripts": {
-    "build": "eleventy",
-    "deploy": "npm run build && gh-pages -d _site"
   }
 }
-
-
