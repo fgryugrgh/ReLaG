@@ -2,7 +2,7 @@
   <div class="row align-items-center justify-content-center">
     <div id="navbarIcon" class="col d-flex align-items-center">
       <img
-        src="/public/images/hamburgernav.png"
+        src="{{ '/public/images/hamburgernav.png' | url }}"
         alt="nav button"
         width="30"
         height="25"
@@ -14,7 +14,7 @@
 
     <div id="relagtext" class="col text-center no-select">
       <img
-        src="/public/images/relaglogo.png"
+        src="{{ '/public/images/relaglogo.png' | url }}"
         alt="logo"
         width="50"
         height="44"
@@ -25,7 +25,7 @@
 
     <div id="sidebarIcon" class="col d-flex align-items-center">
       <img
-        src="/public/images/sidebar.png"
+        src="{{ '/public/images/sidebar.png' | url }}"
         alt="sidebar"
         width="30"
         height="40"
@@ -44,28 +44,28 @@
 
   <a href="{{'/' | url}}" class=" no-decoration navStyle row align-items-center border-gradient transition-all only-top">
     <div class="col">
-      <img src="/public/images/home.png" alt="home" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+      <img src="{{ '/public/images/home.png' | url }}" alt="home" width="40" style="margin-bottom: 5px; margin-right: 5px" />
       Home
     </div>
   </a>
 
-  <a href="{{'/galeri/produk/' | url}}" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+  <a href="{{'/galeri/Produk/' | url}}" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
     <div class="col">
-      <img src="/public/images/gallery.png" alt="galeri" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+      <img src="{{ '/public/images/gallery.png' | url }}" alt="galeri" width="40" style="margin-bottom: 5px; margin-right: 5px" />
       Galeri
     </div>
   </a>
 
   <a href="{{'/about/' | url}}" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
     <div class="col">
-      <img src="/public/images/about.png" alt="about" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+      <img src="{{ '/public/images/about.png' | url }}" alt="about" width="40" style="margin-bottom: 5px; margin-right: 5px" />
       About
     </div>
   </a>
 
-  <a href="{{'/formkontak/' | url}}" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+  <a href="{{'/formkontak/' | url}}" class="no-decoration navStyle row align-items-center border-gradient transition-all">
     <div class="col">
-      <img src="/public/images/Kontak.png" alt="kontak" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+      <img src="{{ '/public/images/Kontak.png' | url }}" alt="kontak" width="40" style="margin-bottom: 5px; margin-right: 5px" />
       Kontak
     </div>
   </a>
@@ -77,7 +77,7 @@
   </div>
   <div class="row g-0">
     <a href="https://www.qoo10.co.id/tech/201645/valve-tunda-rilis-steam-machine-karena-krisis-stok-komponen-fans-harus-bersabar-lebih-lama/" target="_blank">
-      <img src="/public/images/steammachine.jpg" alt="CES 2026 poster" width="475" />
+      <img src="{{ '/public/images/steammachine.jpg' | url }}" alt="CES 2026 poster" width="475" />
     </a>
     <p class="headline text-center">
       Valve menunda rilis dari Steam Machine  
@@ -85,7 +85,7 @@
   </div>
   <div class="row g-0">
     <a href="https://mureks.co.id/asus-umumkan-rog-zephyrus-duo-di-ces-2026-laptop-gaming-dua-layar-oled-pertama-di-dunia-dengan-keyboard-lepas-pasang" target="_blank">
-      <img src="/public/images/zephyrusduo.jpg" alt="asus rog zephyrus duo 2026" width="475" />
+      <img src="{{ '/public/images/zephyrusduo.jpg' | url }}" alt="asus rog zephyrus duo 2026" width="475" />
     </a>
     <p class="headline text-center">
       ASUS Mengumumkan Zephyrus Duo (2026) di CES 2026
@@ -94,7 +94,7 @@
 
   <div class="row g-0">
     <a href="https://teropongmedia.id/lenovo-pamer-legion-pro-rollable-di-ces-2026-laptop-gaming-layar-24-inci-yang-bisa-memanjang/" target="_blank">
-      <img src="/public/images/rollable.jpeg" alt="lenovo legion rollable" width="475" />
+      <img src="{{ '/public/images/rollable.jpeg' | url }}" alt="lenovo legion rollable" width="475" />
     </a>
     <p class="headline text-center">
       Laptop Layar 24 Inci yang Bisa Memanjang dari Lenovo
@@ -103,7 +103,7 @@
 
   <div class="row g-0">
     <a href="https://www.idntimes.com/tech/gadget/ces-2026-intel-core-ultra-series-3-resmi-debut-dengan-intel-18a-00-6kn2w-kphp13" target="_blank">
-      <img src="/public/images/intelcore.jpg" alt="Intel ultra core series 3" width="475" />
+      <img src="{{ '/public/images/intelcore.jpg' | url }}" alt="Intel ultra core series 3" width="475" />
     </a>
     <p class="headline text-center">
       Intel Core Ultra Series 3 Launch
@@ -112,7 +112,7 @@
 
   <div class="row g-0">
     <a href="https://www.ces.tech/" target="_blank">
-      <img src="/public/images/ces.jpg" alt="CES 2026 poster" width="475" />
+      <img src="{{ '/public/images/ces.jpg' | url }}" alt="CES 2026 poster" width="475" />
     </a>
     <p class="headline text-center">
       CES 2026 di Las Vegas, Amerika Serikat

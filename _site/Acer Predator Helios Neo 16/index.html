@@ -3,12 +3,11 @@
   <head>
     <title>ReLaG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/Website-Statis-Bu-Inung/public/css/header.css" />
-    <link rel="stylesheet" href="/Website-Statis-Bu-Inung/public/css/footer.css" />
-    <link rel="stylesheet" href="/Website-Statis-Bu-Inung/public/css/main.css" />
-    <link rel="stylesheet" href="/Website-Statis-Bu-Inung/public/css/loading-animation.css" />
-    <link rel="stylesheet" href="/Website-Statis-Bu-Inung/public/css/loading.css" />
-    <link rel="icon" type="image/x-icon" href="/Website-Statis-Bu-Inung/public/images/relaglogo.png" />
+    <link rel="stylesheet" href="/ReLaG/public/css/header.css" />
+    <link rel="stylesheet" href="/ReLaG/public/css/footer.css" />
+    <link rel="stylesheet" href="/ReLaG/public/css/main.css" />
+    <link rel="stylesheet" href="/ReLaG/public/css/loading-animation.css" />
+    <link rel="stylesheet" href="/ReLaG/public/css/loading.css" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -38,9 +37,9 @@
     <div id="page">
       <header id="header" class="container-fluid no-select">
   <div class="row align-items-center justify-content-center">
-    <div id="navbarIcon" class=" no-underline col d-flex align-items-center">
+    <div id="navbarIcon" class="col d-flex align-items-center">
       <img
-        src="/Website-Statis-Bu-Inung/public/images/hamburgernav.png"
+        src="/ReLaG/public/images/hamburgernav.png"
         alt="nav button"
         width="30"
         height="25"
@@ -50,9 +49,9 @@
       />
     </div>
 
-    <div id="relagtext" class=" no-underline col text-center no-select">
+    <div id="relagtext" class="col text-center no-select">
       <img
-        src="/Website-Statis-Bu-Inung/public/images/relaglogo.png"
+        src="/ReLaG/public/images/relaglogo.png"
         alt="logo"
         width="50"
         height="44"
@@ -61,9 +60,9 @@
       ReLaG
     </div>
 
-    <div id="sidebarIcon" class=" no-underline col d-flex align-items-center">
+    <div id="sidebarIcon" class="col d-flex align-items-center">
       <img
-        src="/Website-Statis-Bu-Inung/public/images/sidebar.png"
+        src="/ReLaG/public/images/sidebar.png"
         alt="sidebar"
         width="30"
         height="40"
@@ -80,43 +79,50 @@
     <p class="text-start mb-0 no-select" onclick="responsiveSides(1)">X</p>
   </div>
 
-  <div class="navStyle row align-items-center border-gradient transition-all only-top">
-    <a href="/Website-Statis-Bu-Inung/"  class="text-white  no-underline col ">
-      <img src="/Website-Statis-Bu-Inung/public/images/home.png" alt="home" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+  <a href="/ReLaG/" class=" no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+    <div class="col">
+      <img src="/ReLaG/public/images/home.png" alt="home" width="40" style="margin-bottom: 5px; margin-right: 5px" />
       Home
-    </a>
-  </div>
+    </div>
+  </a>
 
-  <div class="navStyle row align-items-center border-gradient transition-all only-top">
-    <a href="/Website-Statis-Bu-Inung/galeri/Produk" class="text-white  no-underline col">
-      <img src="/Website-Statis-Bu-Inung/public/images/gallery.png" alt="galeri" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+  <a href="/ReLaG/galeri/Produk/" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+    <div class="col">
+      <img src="/ReLaG/public/images/gallery.png" alt="galeri" width="40" style="margin-bottom: 5px; margin-right: 5px" />
       Galeri
-    </a>
-  </div>
+    </div>
+  </a>
 
-  <div class="navStyle row align-items-center border-gradient transition-all only-top">
-    <a href="/Website-Statis-Bu-Inung/about/" class="text-white  no-underline col">
-      <img src="/Website-Statis-Bu-Inung/public/images/about.png" alt="about" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+  <a href="/ReLaG/about/" class="no-decoration navStyle row align-items-center border-gradient transition-all only-top">
+    <div class="col">
+      <img src="/ReLaG/public/images/about.png" alt="about" width="40" style="margin-bottom: 5px; margin-right: 5px" />
       About
-    </a>
-  </div>
+    </div>
+  </a>
 
-  <div class="navStyle row align-items-center border-gradient transition-all">
-    <a href="/Website-Statis-Bu-Inung/formkontak/" class="text-white  no-underline col">
-      <img src="/Website-Statis-Bu-Inung/public/images/Kontak.png" alt="kontak" width="40" style="margin-bottom: 5px; margin-right: 5px" />
+  <a href="/ReLaG/formkontak/" class="no-decoration navStyle row align-items-center border-gradient transition-all">
+    <div class="col">
+      <img src="/ReLaG/public/images/Kontak.png" alt="kontak" width="40" style="margin-bottom: 5px; margin-right: 5px" />
       Kontak
-    </a>
-  </div>
+    </div>
+  </a>
 </div>
 
 <div id="sidebarOpen" class="container-fluid transition-all">
   <div class="navbarClose row align-items-center no-padding">
     <p class="text-end mb-0 no-select" onclick="responsiveSides(0)">X</p>
   </div>
-
+  <div class="row g-0">
+    <a href="https://www.qoo10.co.id/tech/201645/valve-tunda-rilis-steam-machine-karena-krisis-stok-komponen-fans-harus-bersabar-lebih-lama/" target="_blank">
+      <img src="/ReLaG/public/images/steammachine.jpg" alt="CES 2026 poster" width="475" />
+    </a>
+    <p class="headline text-center">
+      Valve menunda rilis dari Steam Machine  
+    </p>
+  </div>
   <div class="row g-0">
     <a href="https://mureks.co.id/asus-umumkan-rog-zephyrus-duo-di-ces-2026-laptop-gaming-dua-layar-oled-pertama-di-dunia-dengan-keyboard-lepas-pasang" target="_blank">
-      <img src="/Website-Statis-Bu-Inung/public/images/zephyrusduo.jpg" alt="asus rog zephyrus duo 2026" width="475" />
+      <img src="/ReLaG/public/images/zephyrusduo.jpg" alt="asus rog zephyrus duo 2026" width="475" />
     </a>
     <p class="headline text-center">
       ASUS Mengumumkan Zephyrus Duo (2026) di CES 2026
@@ -125,7 +131,7 @@
 
   <div class="row g-0">
     <a href="https://teropongmedia.id/lenovo-pamer-legion-pro-rollable-di-ces-2026-laptop-gaming-layar-24-inci-yang-bisa-memanjang/" target="_blank">
-      <img src="/Website-Statis-Bu-Inung/public/images/rollable.jpeg" alt="lenovo legion rollable" width="475" />
+      <img src="/ReLaG/public/images/rollable.jpeg" alt="lenovo legion rollable" width="475" />
     </a>
     <p class="headline text-center">
       Laptop Layar 24 Inci yang Bisa Memanjang dari Lenovo
@@ -134,7 +140,7 @@
 
   <div class="row g-0">
     <a href="https://www.idntimes.com/tech/gadget/ces-2026-intel-core-ultra-series-3-resmi-debut-dengan-intel-18a-00-6kn2w-kphp13" target="_blank">
-      <img src="/Website-Statis-Bu-Inung/public/images/intelcore.jpg" alt="Intel ultra core series 3" width="475" />
+      <img src="/ReLaG/public/images/intelcore.jpg" alt="Intel ultra core series 3" width="475" />
     </a>
     <p class="headline text-center">
       Intel Core Ultra Series 3 Launch
@@ -143,7 +149,7 @@
 
   <div class="row g-0">
     <a href="https://www.ces.tech/" target="_blank">
-      <img src="/Website-Statis-Bu-Inung/public/images/ces.jpg" alt="CES 2026 poster" width="475" />
+      <img src="/ReLaG/public/images/ces.jpg" alt="CES 2026 poster" width="475" />
     </a>
     <p class="headline text-center">
       CES 2026 di Las Vegas, Amerika Serikat
@@ -161,17 +167,17 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="d-flex justify-content-center">
-      <img src="/Website-Statis-Bu-Inung/public/images/acerpredatorhelios16side.png" class="d-block" height="375px" alt="asus tuf">
+      <img src="/ReLaG/public/images/acerpredatorhelios16side.webp" class="d-block" height="375px" alt="asus tuf">
       </div>
     </div>
     <div class="carousel-item">
       <div class="d-flex justify-content-center">
-      <img src="/Website-Statis-Bu-Inung/public/images/acerpredatorhelios16.png" class="d-block" height="375px" alt="asus tuf">
+      <img src="/ReLaG/public/images/acerpredatorhelios16.png" class="d-block" height="375px" alt="asus tuf">
       </div>
     </div>
     <div class="carousel-item">
       <div class="d-flex justify-content-center">
-      <img src="/Website-Statis-Bu-Inung/public/images/acerpredatorhelios16top.png" class="d-block" height="375px" alt="asus tuf">
+      <img src="/ReLaG/public/images/acerpredatorhelios16top.png" class="d-block" height="375px" alt="asus tuf">
       </div>
     </div>
   </div>
@@ -186,8 +192,8 @@
 </div>
 
 <p class="headline text-center mt-2 h2">
-  Acer Predator Helios Neo 16 <br>
-  Rp29.499.000
+  Acer Predator Helios Neo 16 PHN16 <br>
+  Rp39.999.000
 </p>
 
 <div class="purple-background container mt-5">
@@ -201,30 +207,30 @@
   </div>
   <div class="row border border-top-0 border-2 border-secondary">
     <div class="col text pb-3 poppins h5 mb-0 text-white">
-      Processor : Intel Core i9-14900HX
-      Graphics : NVIDIA GeForce RTX 4080 Laptop GPU 12GB
-      Memory : 32GB DDR5
-      Storage : 1TB PCIe NVMe SSD
-      Display : 16-inch QHD+ 240Hz
+      Processor : Intel Core i7-13700HX
+      Graphics : NVIDIA GeForce RTX 4060 8GB
+      Memory : 16GB DDR5-5600
+      Storage : 1TB PCIe Gen4 SSD
+      Display : 16&quot; 2560x1600 IPS 165Hz
       Battery : 90WHrs
-      Dimensions : 36.5 x 27.0 x 2.5 cm
-      Weight : 2.9 kg
+      Dimensions : 36 x 28 x 2.8 cm
+      Weight : 2.80 kg
       Operating System : Windows 11 Home
     </div>
 
     <div class="col text pb-3 poppins h5 mb-0 text-white border-start border-2 border-secondary">
-      Keyboard : RGB Backlit Keyboard
-      Speakers : 4x Speakers with DTS:X
-      Camera : 1080P FHD Camera
+      Keyboard : Backlit RGB Keyboard
+      Speakers : Stereo Speakers
+      Camera : 720p HD Camera
 
       Ports :
-      1x RJ45 LAN port
-      Thunderbolt 4
-      3x USB 3.2 Gen2
-      1x HDMI 2.1
-      3.5mm Combo Jack
+      1x RJ45 LAN
+      1x USB-C
+      3x USB 3.2
+      1x HDMI
+      1x 3.5mm Combo
 
-      Wireless : Wi-Fi 6E + Bluetooth 5.3
+      Wireless : Wi-Fi 6 + Bluetooth
     </div>
   </div>
 </div>
@@ -240,17 +246,17 @@
   <div class="row mt-2 text-center row-gap-3">
     <div class="col">
       <iframe width="415px" loading="lazy" height="235px"
-        src="https://www.youtube.com/embed/">
+        src="https://www.youtube.com/embed/JjFdS0z26ew">
       </iframe>
     </div>
     <div class="col">
       <iframe width="415px" loading="lazy" height="235px"
-        src="https://www.youtube.com/embed/">
+        src="https://www.youtube.com/embed/PSlaEpWkHVc">
       </iframe>
     </div>
     <div class="col">
       <iframe width="415px" loading="lazy" height="235px"
-        src="https://www.youtube.com/embed/">
+        src="https://www.youtube.com/embed/RHOnSrVrIHc">
       </iframe>
     </div>
   </div>
@@ -263,16 +269,16 @@
   </div>
   <div id="toko" class="row text-center w-75 mt-3 py-3 mx-auto rounded purple-background">
     <div class="col">
-      <img src="/Website-Statis-Bu-Inung/public/images/tokopedialogo.png" height="50px">
-      <a href="" class="poppins ms-1" target="_blank">Tokopedia</a>
+      <img src="/ReLaG/public/images/tokopedialogo.png" height="50px">
+      <a href="https://tk.tokopedia.com/ZSmLWdWK2/" class="poppins ms-1" target="_blank">Tokopedia</a>
     </div>
     <div class="col">
-      <img src="/Website-Statis-Bu-Inung/public/images/shopeelogo.png" height="50px">
-      <a href="" class="poppins ms-1" target="_blank">Shopee</a>
+      <img src="/ReLaG/public/images/shopeelogo.png" height="50px">
+      <a href="https://shopee.co.id/ACER-HELIOS-NEO-16-PHN16-72-I7-14700HX-16GB-1TB-RTX-4060-16-IPS-WUXGA-165Hz-SRGB-100-W11-OHS-i.694490725.29914716318?extraParams=%7B%22display_model_id%22%3A256827067420%2C%22model_selection_logic%22%3A3%7D" class="poppins ms-1" target="_blank">Shopee</a>
     </div>
     <div class="col">
-      <img src="/Website-Statis-Bu-Inung/public/images/lazadalogo.png" height="50px">
-      <a href="" class="poppins ms-1" target="_blank">Lazada</a>
+      <img src="/ReLaG/public/images/lazadalogo.png" height="50px">
+      <a href="https://www.lazada.co.id/products/pdp-i7859260513-s14272084752.html?c=&amp;channelLpJumpArgs=&amp;clickTrackInfo=query%253AAcer%252BPredator%252BHelios%252BNeo%252B16%253Bnid%253A7859260513%253Bsrc%253ALazadaMainSrp%253Brn%253A1fe8f825d8a71bf720fd271ecab04387%253Bregion%253Aid%253Bsku%253A7859260513_ID%253Bprice%253A19825000%253Bclient%253Adesktop%253Bsupplier_id%253A100219880%253Bsession_id%253A%253Bbiz_source%253Ah5_internal%253Bslot%253A3%253Butlog_bucket_id%253A470687%253Basc_category_id%253A9110%253Bitem_id%253A7859260513%253Bsku_id%253A14272084752%253Bshop_id%253A75379%253BtemplateInfo%253A107879_A3_C_D_E%2523&amp;freeshipping=1&amp;fs_ab=2&amp;fuse_fs=&amp;lang=en&amp;location=Kota%20Jakarta%20Timur&amp;price=1.9825E%207&amp;priceCompare=skuId%3A14272084752%3Bsource%3Alazada-search-voucher%3Bsn%3A1fe8f825d8a71bf720fd271ecab04387%3BoriginPrice%3A1982500000%3BdisplayPrice%3A1982500000%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A0%3Btimestamp%3A1770812821539&amp;ratingscore=5.0&amp;request_id=1fe8f825d8a71bf720fd271ecab04387&amp;review=1&amp;sale=1&amp;search=1&amp;source=search&amp;spm=a2o4j.searchlist.list.3&amp;stock=1" class="poppins ms-1" target="_blank">Lazada</a>
     </div>
   </div>
 </div>
@@ -295,11 +301,11 @@
   <div class="row purple-background mt-3 justify-content-center">
     <div class="row">
       <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-        <img src="/Website-Statis-Bu-Inung/public/images/profile.png" class="d-block rounded-circle" width="50px">
+        <img src="/ReLaG/public/images/profile.png" class="d-block rounded-circle" width="50px">
       </div>
       <div class="col d-flex flex-column text-start pb-2 pt-3">
         <div class="headline h5 mb-0">
-          PredatorFan
+          SmartExplorer
         </div>
         <div>
           <i class="fa-solid fa-star star"></i> 
@@ -311,17 +317,17 @@
       </div>
     </div>
     <div class="row mb-3 ms-1 poppins">
-      Performa terbaik untuk gaming &amp; kreator.
+      Performa gaming tinggi untuk layar 16&quot;.
     </div>
   </div>
   <div class="row purple-background mt-3 justify-content-center">
     <div class="row">
       <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-        <img src="/Website-Statis-Bu-Inung/public/images/profile.png"  class="d-block rounded-circle" width="50px">
+        <img src="/ReLaG/public/images/profile.png"  class="d-block rounded-circle" width="50px">
       </div>
       <div class="col d-flex flex-column text-start pb-2 pt-3">
         <div class="headline h5 mb-0">
-          HighEndGamer
+          ValueSeeker
         </div>
         <div>
           <i class="fa-solid fa-star star"></i> 
@@ -333,18 +339,18 @@
       </div>
     </div>
     <div class="row mb-3 ms-1 poppins">
-      Layar luar biasa.
+      Build quality solid.
     </div>
   </div>
   <div id="hiddenReview" class="hidden">
     <div class="row purple-background mt-3 justify-content-center">
       <div class="row">
         <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-          <img src="/Website-Statis-Bu-Inung/public/images/profile.png" class="d-block rounded-circle" width="50px">
+          <img src="/ReLaG/public/images/profile.png" class="d-block rounded-circle" width="50px">
         </div>
         <div class="col d-flex flex-column text-start pb-2 pt-3">
           <div class="headline h5 mb-0">
-            TechPro
+            ClearReviewer
           </div>
           <div>
             <i class="fa-solid fa-star star"></i> 
@@ -356,17 +362,17 @@
         </div>
       </div>
       <div class="row mb-3 ms-1 poppins">
-        Berat tapi powerful.
+        Baterai tergolong standar.
       </div>
     </div>
     <div class="row purple-background mt-3 justify-content-center">
       <div class="row">
         <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-          <img src="/Website-Statis-Bu-Inung/public/images/profile.png" class="d-block rounded-circle" width="50px">
+          <img src="/ReLaG/public/images/profile.png" class="d-block rounded-circle" width="50px">
         </div>
         <div class="col d-flex flex-column text-start pb-2 pt-3">
           <div class="headline h5 mb-0">
-            EliteUser
+            GizmoFan99
           </div>
           <div>
             <i class="fa-solid fa-star star"></i> 
@@ -378,17 +384,17 @@
         </div>
       </div>
       <div class="row mb-3 ms-1 poppins">
-        Harga sangat tinggi.
+        Agak berat untuk mobilitas.
       </div>
     </div>
     <div class="row purple-background mt-3 justify-content-center">
       <div class="row">
         <div class="col-auto gx-2 pt-3 pb-2 ms-1">
-          <img src="/Website-Statis-Bu-Inung/public/images/profile.png" class="d-block rounded-circle" width="50px">
+          <img src="/ReLaG/public/images/profile.png" class="d-block rounded-circle" width="50px">
         </div>
         <div class="col d-flex flex-column text-start pb-2 pt-3">
           <div class="headline h5 mb-0">
-            Rian K.
+            Omar H.
           </div>
           <div>
             <i class="fa-solid fa-star star"></i> 
@@ -400,7 +406,7 @@
         </div>
       </div>
       <div class="row mb-3 ms-1 poppins">
-        Pendingin efektif.
+        Port lengkap.
       </div>
     </div>
   </div>
@@ -448,7 +454,7 @@
       <footer id="footer">
   <div class="row align-items-center" id="toprow">
     <div class="col no-select">
-      <img src="/Website-Statis-Bu-Inung/public/images/relag.png" width="300" />
+      <img src="/ReLaG/public/images/relag.png" width="300" />
     </div>
 
     <div class="col">
@@ -488,19 +494,19 @@
     <div class="col d-flex align-items-center justify-content-end no-select">
       <div class="d-flex flex-row" id="social">
         <a href="https://facebook.com" target="_blank">
-          <img src="/Website-Statis-Bu-Inung/public/images/facebook.png" alt="facebook_icon" />
+          <img src="/ReLaG/public/images/facebook.png" alt="facebook_icon" />
         </a>
         <a href="https://instagram.com" target="_blank">
-          <img src="/Website-Statis-Bu-Inung/public/images/instagram.png" alt="instagram_icon" />
+          <img src="/ReLaG/public/images/instagram.png" alt="instagram_icon" />
         </a>
         <a href="https://tiktok.com" target="_blank">
-          <img src="/Website-Statis-Bu-Inung/public/images/tiktok.png" alt="tiktok_icon" />
+          <img src="/ReLaG/public/images/tiktok.png" alt="tiktok_icon" />
         </a>
         <a href="https://x.com" target="_blank">
-          <img src="/Website-Statis-Bu-Inung/public/images/twitter.png" alt="twitter_icon" />
+          <img src="/ReLaG/public/images/twitter.png" alt="twitter_icon" />
         </a>
         <a href="https://mail.google.com" target="_blank">
-          <img src="/Website-Statis-Bu-Inung/public/images/email.png" alt="email_icon" />
+          <img src="/ReLaG/public/images/email.png" alt="email_icon" />
         </a>
       </div>
     </div>
@@ -534,9 +540,8 @@
   </div>
 </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="/Website-Statis-Bu-Inung/public/js/review.js"></script>
-    <script src="/Website-Statis-Bu-Inung/public/js/footer.js"></script>
-    <script src="/Website-Statis-Bu-Inung/public/js/header.js"></script>
+    <script src="/ReLaG/public/js/review.js"></script>
+    <script src="/ReLaG/public/js/footer.js"></script>
+    <script src="/ReLaG/public/js/header.js"></script>
   </body>
-</html
+</html>
