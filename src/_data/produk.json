@@ -3,7 +3,7 @@
     "slug": "ASUS TUF Gaming A15",
     "title": "ASUS TUF Gaming A15",
     "namaProduk": "ASUS TUF Gaming A15 FA506NCG",
-    "hargaProduk": "Rp9.799.000",
+    "hargaProduk": "Rp12.299.000",
     "laptop1": "asustufa15.png",
     "laptop2": "asustuffront.png",
     "laptop3": "asustuftop.png",
@@ -40,7 +40,14 @@
     "userReview2": "Untuk kualitas produknya saya merasa puas . menurut saya ini merupakan salah satu laptop terbaik di kelas harganya",
     "userReview3": "Spek tinggi dengan desain excelent", 
     "userReview4": "Laptop ini cukup andal untuk penggunaan harian dan gaming ringan, tetapi performa menurun saat beban kerja berat dalam waktu lama.",
-    "userReview5": "Cocok untuk kebutuhan gaming ringan dan kerja, tidak istimewa"
+    "userReview5": "Cocok untuk kebutuhan gaming ringan dan kerja, tidak istimewa",
+    "ratingsData": {
+        "5": 130,
+        "4": 42,
+        "3": 15,
+        "2": 1,
+        "1": 4
+    }
 },
 {
     "slug": "Lenovo Legion 5",
@@ -83,7 +90,14 @@
     "userReview2": "Desain solid dan keyboard nyaman dipakai lama. Cocok untuk gamer dan pekerja kreatif",
     "userReview3": "Layar jernih dengan refresh rate tinggi, pengalaman bermain game jadi lebih maksimal.", 
     "userReview4": "Performa bagus dan build quality terasa premium, hanya saja bobotnya agak berat.",
-    "userReview5": "Laptop gaming yang andal di kelasnya, baterai cukup tapi bisa lebih optimal."
+    "userReview5": "Laptop gaming yang andal di kelasnya, baterai cukup tapi bisa lebih optimal.",
+    "ratingsData": {
+        "5": 84,
+        "4": 21,
+        "3": 6,
+        "2": 1,
+        "1": 2 
+    }
 },
 {
     "slug": "MSI Cyborg 15",
@@ -126,13 +140,20 @@
     "userReview2": "Build solid dan keyboard nyaman, suara fan agak berisik.",
     "userReview3": "Bagus buat budget gamer, warna layar agak kurang kuat.", 
     "userReview4": "Cukup powerful buat main game mainstream, layar responsif dan harga bersaing. Kurang maksimal untuk AAA berat dan kipas agak berisik",
-    "userReview5": "Overall memuaskan untuk harga segini. Baterai standar, namun performa gaming solid."
+    "userReview5": "Overall memuaskan untuk harga segini. Baterai standar, namun performa gaming solid.",
+    "ratingsData": {
+        "5": 124,
+        "4": 31,
+        "3": 12,
+        "2": 9,
+        "1": 3 
+    }
 },
 {
     "slug": "ASUS ROG Strix G16",
     "title": "ASUS ROG Strix G16",
     "namaProduk": "ASUS ROG Strix G16 G615LR",
-    "hargaProduk": "Rp53.999.000",
+    "hargaProduk": "Rp35.499.000",
     "laptop1": "rogstrixg16side.png",
     "laptop2": "rogstrixg16.png",
     "laptop3": "rogstrixg16top.png",
@@ -169,7 +190,14 @@
     "userReview2": "Build quality premium dan mudah di-upgrade.",
     "userReview3": "Layar tajam dan warna akurat.",
     "userReview4": "Agak berat untuk dibawa sehari-hari.",
-    "userReview5": "Baterai cepat habis saat gaming intens."
+    "userReview5": "Baterai cepat habis saat gaming intens.",
+    "ratingsData": {
+        "5": 174,
+        "4": 78,
+        "3": 20,
+        "2": 13,
+        "1": 1 
+    }
 },
 {
     "slug": "ASUS ROG Zephyrus G14",
@@ -212,7 +240,14 @@
     "userReview2": "Layar OLED sangat tajam untuk gaming dan kreatif.",
     "userReview3": "Battery cukup tahan lama untuk ukuran tipis.",
     "userReview4": "Harga tinggi untuk ukuran 14\".",
-    "userReview5": "Cocok untuk gamer dan kreator konten."
+    "userReview5": "Cocok untuk gamer dan kreator konten.",
+    "ratingsData": {
+        "5": 78,
+        "4": 9,
+        "3": 4,
+        "2": 1,
+        "1": 0 
+    }
 },
 {
     "slug": "Lenovo LOQ 15",
@@ -255,7 +290,14 @@
     "userReview2": "Harga terjangkau untuk spek RTX.",
     "userReview3": "Layar 144Hz smooth.",
     "userReview4": "Baterai cepat habis saat gaming.",
-    "userReview5": "Cocok untuk tugas sehari-hari dan gaming ringan."
+    "userReview5": "Cocok untuk tugas sehari-hari dan gaming ringan.",
+    "ratingsData": {
+        "5": 83,
+        "4": 12,
+        "3": 5,
+        "2": 2,
+        "1": 1 
+    }
 },
 {
     "slug": "Lenovo IdeaPad Gaming 3",
@@ -298,7 +340,14 @@
     "userReview2": "Harga vs performa baik.",
     "userReview3": "Agak berat untuk mobilitas.",
     "userReview4": "Baterai biasa saja.",
-    "userReview5": "Layarnya tajam dan smooth."
+    "userReview5": "Layarnya tajam dan smooth.",
+    "ratingsData": {
+        "5": 101,
+        "4": 20,
+        "3": 5,
+        "2": 3,
+        "1": 0 
+    }
 },
 {
     "slug": "MSI Gaming GF63",
@@ -341,7 +390,14 @@
     "userReview2": "Harga terjangkau.",
     "userReview3": "Layar refresh tinggi.",
     "userReview4": "GPU agak tua.",
-    "userReview5": "Speaker cukup standar."
+    "userReview5": "Speaker cukup standar.",
+    "ratingsData": {
+        "5": 35,
+        "4": 5,
+        "3": 0,
+        "2": 0,
+        "1": 1 
+    }
 },
 {
     "slug": "Acer Predator Helios Neo 16",
@@ -384,7 +440,14 @@
     "userReview2": "Build quality solid.",
     "userReview3": "Baterai tergolong standar.",
     "userReview4": "Agak berat untuk mobilitas.",
-    "userReview5": "Port lengkap."
+    "userReview5": "Port lengkap.",
+    "ratingsData": {
+        "5": 117,
+        "4": 12,
+        "3": 5,
+        "2": 3,
+        "1": 1 
+    }
 },
 {
     "slug": "Acer Aspire Vero 16",
@@ -427,7 +490,14 @@
     "userReview2": "Performa cukup untuk kerja dan multitasking.",
     "userReview3": "Layar luas dan nyaman untuk produktivitas.",
     "userReview4": "Tidak cocok untuk gaming berat.",
-    "userReview5": "Ringan dan mudah dibawa."
+    "userReview5": "Ringan dan mudah dibawa.",
+    "ratingsData": {
+        "5": 109,
+        "4": 32,
+        "3": 5,
+        "2": 1,
+        "1": 0 
+    }
 },
 {
     "slug": "MSI Thin 15",
@@ -470,7 +540,14 @@
     "userReview2": "Ringan dan tipis untuk kelas gaming, tetapi pendinginan standar.",
     "userReview3": "Layar 144Hz nyaman untuk gameplay.",
     "userReview4": "Build agak sederhana dibanding kompetitor.",
-    "userReview5": "Baterai tergolong cepat habis saat beban berat." 
+    "userReview5": "Baterai tergolong cepat habis saat beban berat.", 
+    "ratingsData": {
+        "5": 82,
+        "4": 12,
+        "3": 2,
+        "2": 0, 
+        "1": 1 
+    }
 },
 {
     "slug": "Acer Nitro 5",
@@ -513,6 +590,13 @@
     "userReview2": "Layar 144Hz terasa smooth saat bermain game kompetitif.", 
     "userReview3": "Harga vs spek sangat kompetitif di kelas gaming menengah.",
     "userReview4": "Baterai cepat menurun saat bermain game berat.",
-    "userReview5": "Cocok untuk gaming umum dan multitasking."
+    "userReview5": "Cocok untuk gaming umum dan multitasking.",
+    "ratingsData": {
+        "5": 73,
+        "4": 5,
+        "3": 1,
+        "2": 3, 
+        "1": 0  
+    }
 }
 ]

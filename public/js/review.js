@@ -1,10 +1,6 @@
-const ratingsData = {
-  5: 140,
-  4: 42,
-  3: 15,
-  2: 1,
-  1: 4 
-};
+function roundToNearestHalf(num) {
+  return Math.round(num * 2) / 2;
+}
 
 function renderRatings(data) {
   const totalReviews = Object.values(data).reduce((a, b) => a + b, 0);
@@ -27,11 +23,21 @@ function renderStars(containerId, rating) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
 
+  const roundedRating = roundToNearestHalf(rating);
+  const fullStars = Math.floor(roundedRating);
+  const hasHalfStar = roundedRating % 1 !== 0;
+
   for (let i = 1; i <= 5; i++) {
-    container.innerHTML +=
-      i <= Math.floor(rating)
-        ? `<i class="fa-solid fa-star star"></i>`
-        : `<i class="fa-solid fa-star star-muted"></i>`;
+    if (i <= fullStars) {
+      // Full star
+      container.innerHTML += `<i class="fa-solid fa-star star"></i>`;
+    } else if (i === fullStars + 1 && hasHalfStar) {
+      // Half star (Font Awesome 6)
+      container.innerHTML += `<i class="fa-solid fa-star-half-stroke star"></i>`;
+    } else {
+      // Empty star
+      container.innerHTML += `<i class="fa-regular fa-star star-muted"></i>`;
+    }
   }
 }
 
