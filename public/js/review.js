@@ -7,7 +7,7 @@ function renderRatings(data) {
 
   let totalScore = 0;
   for (let star in data) {
-    totalScore += star * data[star];
+    totalScore += Number(star) * data[star];
   }
   const average = (totalScore / totalReviews).toFixed(1);
 
@@ -29,13 +29,10 @@ function renderStars(containerId, rating) {
 
   for (let i = 1; i <= 5; i++) {
     if (i <= fullStars) {
-      // Full star
       container.innerHTML += `<i class="fa-solid fa-star star"></i>`;
     } else if (i === fullStars + 1 && hasHalfStar) {
-      // Half star (Font Awesome 6)
       container.innerHTML += `<i class="fa-solid fa-star-half-stroke star"></i>`;
     } else {
-      // Empty star
       container.innerHTML += `<i class="fa-regular fa-star star-muted"></i>`;
     }
   }
@@ -62,7 +59,11 @@ function renderBreakdown(data, total) {
   }
 }
 
-renderRatings(ratingsData);
+document.addEventListener('DOMContentLoaded', () => {
+  if (typeof ratingsData !== 'undefined') {
+    renderRatings(ratingsData);
+  }
+});
 
 const stars = document.querySelectorAll('.star-rating i');
 let currentRating = 0;
